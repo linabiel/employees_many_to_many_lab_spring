@@ -33,6 +33,7 @@ class EmployeeManyToManyApplicationTests {
 	void createEmployeeAndDepartment() {
 
 		Department department = new Department("Software");
+		departmentRepository.save(department);
 
 		Employee employee = new Employee("Kieran", "Lamb", 1234, department);
 		employeeRepository.save(employee);
